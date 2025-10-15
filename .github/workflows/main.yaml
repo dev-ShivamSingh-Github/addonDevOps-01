@@ -1,12 +1,10 @@
-name: Hello
+name: main
 
-on:
-    push:
-        branches:
-            - main
-job:
+on: push
+
+jobs:
     say_hello:
         runs-on: ubuntu-latest
         steps:
-            -name: Print a greeting
+            - name: Print a greeting
             run: echo "Hello World!"
