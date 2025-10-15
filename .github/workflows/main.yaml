@@ -4,11 +4,6 @@ on:
     push:
         branches:
             - main
-    workflow_dispatch: {}
-
-concurrency:
-    group: main-deploy
-    cancel-in-progress: true
 job:
     say_hello:
         runs-on: ubuntu-latest
